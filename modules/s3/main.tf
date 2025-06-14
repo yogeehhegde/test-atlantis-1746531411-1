@@ -1,0 +1,18 @@
+locals {
+  default_tags = {
+    "tcss:tag-version"    = "1"
+    "tcss:classification" = "green"
+    "claimed_ownership"   = "true"
+    "managed-by"          = "IacasS"
+  }
+}
+module "iac_s3_bucket" {
+  source  = "terraform-aws-modules/s3-bucket/aws"
+  version = "~> 4.0"
+
+  bucket = var.bucket_name
+  acl    = var.acl
+
+  # Pass through any other variables you want to expose
+  tags = merge(local.default_tags, var.tags)
+}
