@@ -11,7 +11,6 @@ module "iac_s3_bucket" {
   version = "~> 4.0"
 
   bucket = var.bucket_name
-  acl    = var.acl
 
   # Pass through any other variables you want to expose
   tags = merge(local.default_tags, var.tags)
