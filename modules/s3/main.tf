@@ -3,7 +3,8 @@ locals {
     "tcss:tag-version"    = "1"
     "tcss:classification" = "green"
     "claimed_ownership"   = "true"
-    "managed-by"          = "IacasS"
+    "managed-by"          = "plateng-iac"
+
   }
 }
 module "iac_s3_bucket" {
