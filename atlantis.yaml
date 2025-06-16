@@ -22,3 +22,13 @@ projects:
     - '*.tfvars'
     - ../../../../modules/*/*.tf
     enabled: true
+- name: plateng-iac-597915711542-us-east-2
+  dir: ./teams/plateng-iac/597915711542/us-east-2
+  workspace: plateng-iac-597915711542-us-east-2
+  terraform_version: 1.12.2
+  autoplan:
+    when_modified:
+    - '*.tf'
+    - '*.tfvars'
+    - ../../../../modules/*/*.tf
+    enabled: true
