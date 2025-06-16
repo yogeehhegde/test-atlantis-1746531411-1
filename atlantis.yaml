@@ -10,4 +10,5 @@ projects:
     when_modified:
     - '*.tf'
     - '*.tfvars'
+    - '../../../../modules/*/*.tf'
     enabled: true
