@@ -3,7 +3,7 @@ locals {
     "tcss:tag-version"    = "1"
     "tcss:classification" = "green"
     "claimed_ownership"   = "true"
-    "managed-by"          = "plateng-iac"
+    "managed-by"          = "iacasS"
 
   }
 }
