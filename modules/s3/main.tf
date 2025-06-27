@@ -11,7 +11,9 @@ module "iac_s3_bucket" {
   source  = "terraform-aws-modules/s3-bucket/aws"
   version = "~> 4.0"
 
-  bucket = var.bucket_name
+  bucket               = var.bucket_name
+  bucket_prefix        = var.bucket_prefix
+  force_destroy        = true
   attach_public_policy = false
 
   # Pass through any other variables you want to expose
